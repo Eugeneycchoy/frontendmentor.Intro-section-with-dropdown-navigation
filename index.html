@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Intro section with dropdown navigation</title>
+
+    <!-- Reset CSS -->
+    <link rel="stylesheet" href="css/reset.css" />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/app.css" />
+    <link rel="stylesheet" href="css/index.css" />
+  </head>
+  <body>
+    <nav>
+      <ul id="main-menu">
+        <li id="logo">
+          <span id="logo-s">S</span><span id="logo-nap">nap</span>
+        </li>
+        <li id="features">
+          Features <img src="images/icon-arrow-down.svg" alt="" />
+          <div class="features-dropdown hidden">
+            <a href=""><img src="images/icon-todo.svg" alt="" />Todo List</a>
+            <a href=""><img src="images/icon-calendar.svg" alt="" />Calender</a>
+            <a href=""
+              ><img src="images/icon-reminders.svg" alt="" />Reminders</a
+            >
+            <a href=""><img src="images/icon-planning.svg" alt="" />Planning</a>
+          </div>
+        </li>
+        <li id="company">
+          Company <img src="images/icon-arrow-down.svg" alt="" />
+          <div class="company-dropdown hidden">
+            <a href="">History</a>
+            <a href="">Our Team</a>
+            <a href="">Blog</a>
+          </div>
+        </li>
+        <li>Careers</li>
+        <li>About</li>
+      </ul>
+
+      <ul id="login-register">
+        <li>Login</li>
+        <li>Register</li>
+      </ul>
+    </nav>
+
+    <header>
+      <div class="left-half">
+        <div>
+          <h1>Make <br />remote work</h1>
+          <p>
+            Get your team in sync, no matter your location. Streamline
+            processes, create team rituals, and watch productivity soar.
+          </p>
+          <button class="learn-more-btn">Learn more</button>
+        </div>
+        <div>
+          <ul id="sponsors-flex-container">
+            <li><img src="images/client-databiz.svg" alt="" /></li>
+            <li><img src="images/client-audiophile.svg" alt="" /></li>
+            <li><img src="images/client-meet.svg" alt="" /></li>
+            <li><img src="images/client-maker.svg" alt="" /></li>
+          </ul>
+        </div>
+      </div>
+      <div class="right-half">
+        <img src="images/image-hero-desktop.png" alt="" />
+      </div>
+    </header>
+    <div id="overlay" class="hidden"></div>
+    <!-- Features
+  Company
+  Careers
+  About
+
+  Login
+  Register
+
+  Make remote work
+
+  Get your team in sync, no matter your location. Streamline processes, 
+  create team rituals, and watch productivity soar.
+
+  Learn more -->
+    <script src="JS/app.js"></script>
+  </body>
+</html>
